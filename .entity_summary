@@ -1,0 +1,1 @@
+- Fiona Export zu KML (fiona_export_zu_kml): zip_datei[file], kml_name[string/text], beschreibung[string/textarea], koordinatensystem[lookup/select], koordinatensystem_sonstiges[string/text], ebenen[string/text], geometrietyp[multiplelookup/checkbox], attribute_exportieren[bool], anmerkungen[string/textarea]

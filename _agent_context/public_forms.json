@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "fiona_export_zu_kml",
+      "app_id": "69e9e816ac7299aacb189823",
+      "path": "/rest/apps/69e9e816ac7299aacb189823/records",
+      "allowed_fields": [
+        "kml_name",
+        "beschreibung",
+        "koordinatensystem",
+        "koordinatensystem_sonstiges",
+        "ebenen",
+        "geometrietyp",
+        "attribute_exportieren",
+        "anmerkungen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Fiona Export zu KML — Formular"
+    }
+  ]
+}

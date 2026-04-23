@@ -1,0 +1,164 @@
+{
+  "appgroup_id": "69e9e82d15041191123357ab",
+  "appgroup_name": "Fiona ZIP zu KML Konverter",
+  "apps": {
+    "fiona_export_zu_kml": {
+      "app_id": "69e9e816ac7299aacb189823",
+      "name": "Fiona Export zu KML",
+      "controls": {
+        "zip_datei": {
+          "identifier": "zip_datei",
+          "label": "Fiona Export ZIP-Datei",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file",
+          "description": "An uploaded file (or `null`/`None`).\n\nThe field value will be the URL to download the file in the form `https://my.living-apps.de/files/69e9e816ac7299aacb189823/data/<record-id>/<control-identifier>/<internal-id>` (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "kml_name": {
+          "identifier": "kml_name",
+          "label": "Name der KML-Ausgabedatei",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "beschreibung": {
+          "identifier": "beschreibung",
+          "label": "Beschreibung",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "koordinatensystem": {
+          "identifier": "koordinatensystem",
+          "label": "Koordinatensystem der Quelldaten",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "description": "One selected option of multiple available options (or `null`/`None`).\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be the key in this `lookup_data` attribute (or `null`/`None`).\n\nDisplayed as single-select field in HTML pages.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true,
+          "lookup_data": {
+            "wgs84": "WGS 84 (EPSG:4326)",
+            "lv95": "CH1903+ / LV95 (EPSG:2056)",
+            "lv03": "CH1903 / LV03 (EPSG:21781)",
+            "utm32n": "UTM Zone 32N (EPSG:32632)",
+            "sonstiges": "Sonstiges"
+          }
+        },
+        "koordinatensystem_sonstiges": {
+          "identifier": "koordinatensystem_sonstiges",
+          "label": "Koordinatensystem (falls Sonstiges)",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": true,
+          "in_expert_search": true
+        },
+        "ebenen": {
+          "identifier": "ebenen",
+          "label": "Zu exportierende Ebenen (kommagetrennt)",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text",
+          "description": "A string value not longer than 4000 characters (or `null`/`None`).",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": null,
+          "in_expert_search": true
+        },
+        "geometrietyp": {
+          "identifier": "geometrietyp",
+          "label": "Geometrietypen einschliessen",
+          "type": "multiplelookup",
+          "subtype": "checkbox",
+          "fulltype": "multiplelookup/checkbox",
+          "description": "Arbitrary number of selected options out of multiple available ones.\n\nThe available options are defined in the `lookup_data` attribute of this control.\n\nThe field value will be a list of keys from this `lookup_data` attribute.\n\nDisplayed as multiple checkbox fields in HTML pages.",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": null,
+          "in_expert_search": true,
+          "lookup_data": {
+            "punkte": "Punkte",
+            "linien": "Linien",
+            "flaechen": "Flaechen"
+          }
+        },
+        "attribute_exportieren": {
+          "identifier": "attribute_exportieren",
+          "label": "Attribute in KML exportieren",
+          "type": "bool",
+          "subtype": null,
+          "fulltype": "bool",
+          "description": "A boolean value, i.e. `true` or `false` (or `null`/`None`).",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": null,
+          "in_expert_search": true
+        },
+        "anmerkungen": {
+          "identifier": "anmerkungen",
+          "label": "Anmerkungen",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea",
+          "description": "A string value that can contain multiple lines of text (or `null`/`None`).",
+          "required": null,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": null,
+          "in_expert_search": true
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "Fiona Export zu KML"
+    ]
+  }
+}
